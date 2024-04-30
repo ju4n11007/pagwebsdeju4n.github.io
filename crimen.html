@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUSPENSO</title>
+    <style>
+        /* Estilo del encabezado */
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Estilo de la sección de libros de suspenso */
+        .book-section {
+            background-color: #1f1f1f;
+            padding: 50px 0;
+        }
+
+        /* Estilo de cada libro */
+        .book {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        /* Efecto de zoom al pasar el ratón sobre el libro */
+        .book:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo de la imagen del libro */
+        .book img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Estilo del título del libro */
+        .book h2 {
+            color: #333;
+            margin: 15px 0;
+            font-size: 24px;
+        }
+
+        /* Estilo de la descripción del libro */
+        .book p {
+            padding: 0 20px;
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* Estilo del enlace de descarga */
+        .download-link {
+            display: block;
+            background-color: #ff5722;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+
+        .download-link:hover {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> SUSPENSO</h1>
+
+    <div class="book">
+        <h2>Libro 2: "Quiénes fueron los Davis (Parte 1)"</h2>
+        <p>Descripcion breve del libro </p>
+        <a href="davis.pdf" class="download-link" download>Descargar Libro</a>
+    </div>
+
+    <div class="book">
+        <h2>Libro 2: "Quiénes fueron los Davis (Finn Hamilton)"</h2>
+        <p>Continuación de la trilogía: ¿Quiénes fueron los Davis?</p>
+        <a href="libros/libro2.pdf" class="download-link" download>Descargar Libro</a>
+    </div>
+
+    <div class="book">
+        <h2>Libro 3: "Quiénes fueron los Davis Parte 3 (Próximamente 2025)"</h2>
+        <p>Más información sobre el tercer libro. </p>
+        <a href="libros/libro3.pdf" class="download-link" download>Descargar Libro</a>
+    </div>
+
+</body>
+
+</html>

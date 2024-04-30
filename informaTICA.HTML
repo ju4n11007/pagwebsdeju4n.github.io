@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFORMÁTICA</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo CSS externo aquí -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .book {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .book h2 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .book p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .download-link {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-link:hover {
+            background-color: #45a049;
+        }
+
+        .upcoming-books {
+            background-color: #f9f9f9;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .feature-list li {
+            width: calc(33.33% - 40px);
+            margin: 20px;
+        }
+
+        .book-title {
+            color: #333;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .book-author {
+            color: #666;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>INFORMÁTICA</h1>
+        </div>
+    </header>
+
+    <section class="book">
+        <div class="container">
+            <h2>Libro 1: "Introducción a la Programación"</h2>
+            <p>Sumérgete en el fascinante mundo de la programación con "Introducción a la Programación", una obra maestra que sirve como tu guía esencial hacia el vasto universo de la programación. Este libro, diseñado para principiantes apasionados por la tecnología, te llevará de la mano a través de los fundamentos esenciales de la programación, desmitificando conceptos complejos y guiándote hacia la maestría en el arte de crear software.</p>
+            <a href="introduccion-a-la-programacion.pdf" class="download-link button" download>Descargar Libro</a>
+        </div>
+    </section>
+
+    <section class="book">
+        <div class="container">
+            <h2>Libro 2: "Entendiendo Python desde Cero"</h2>
+            <p>En el vasto universo de la programación, cada lenguaje es una puerta de entrada a un mundo único de posibilidades y soluciones. Este libro, "Entendiendo Python desde Cero", invita a los lectores a sumergirse en la diversidad de lenguajes de programación, con un enfoque particular en el poderoso y versátil Python.</p>
+            <img src="python-cover.jpg" alt="Portada del Libro 2" class="image-with-shadow">
+            <a href="entendiendo-python-desde-cero.pdf" class="download-link button" download>Descargar Libro</a>
+        </div>
+    </section>
+
+    <section class="book">
+        <div class="container">
+            <h2>Libro 3: "Linux y Todas sus Distribuciones"</h2>
+            <p>En este libro, exploraremos en profundidad la historia de Linux, su filosofía de código abierto y su impacto en la industria de la informática. Desglosaremos las distribuciones más populares, desde las icónicas como Ubuntu y Fedora hasta las especializadas como Kali Linux y Raspberry Pi OS. Descubrirás cómo elegir la distribución adecuada para tus necesidades y cómo configurarla a la perfección.</p>
+            <img src="linux-cover.jpg" alt="Portada del Libro 3" class="image-with-shadow">
+            <a href="linux-y-todas-sus-distribuciones.pdf" class="download-link button" download>Descargar Libro</a>
+        </div>
+    </section>
+
+    <section class="upcoming-books">
+        <div class="container">
+            <h1>Próximamente ;-) </h1>
+            <ul class="feature-list">
+                <li>
+                    <h3 class="book-title">SQL y Docker</h3>
+                    <p class="book-author">JU4N</p>
+                </li>
+                <li>
+                    <h3 class="book-title">El PC (Atajos y Más)</h3>
+                    <p class="book-author">JU4N</p>
+                </li>
+                <li>
+                    <h3 class="book-title">Sistemas Operativos (con Todas sus Distribuciones)</h3>
+                    <p class="book-author">JU4N</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>

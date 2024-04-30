@@ -1,0 +1,175 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos de la barra de navegación */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Ocultar la barra lateral por defecto */
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    z-index: 1;
+    transition: left 0.3s ease; /* Agregar una transición suave al abrir/cerrar la barra */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar li {
+    margin-bottom: 20px;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar li a:hover {
+    background-color: #555;
+}
+
+/* Abrir la barra lateral en dispositivos móviles */
+.sidebar.open {
+    left: 0;
+}
+
+/* Estilos para las secciones de contenido */
+.explanation,
+.contact-section,
+.descubrir {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.explanation h2,
+.contact-section h2,
+.descubrir h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.explanation p,
+.contact-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+        background-color: #333;
+        text-align: center;
+        left: 0; /* Asegurar que la barra lateral esté visible en dispositivos móviles */
+    }
+
+    .toggle-sidebar {
+        display: block; /* Mostrar el botón de alternar barra lateral en dispositivos móviles */
+    }
+
+    nav ul {
+        display: none; /* Ocultar el menú de navegación principal en dispositivos móviles */
+    }
+}

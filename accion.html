@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCION</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #e74c3c;
+            margin-bottom: 30px;
+        }
+
+        .book {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .book:hover {
+            transform: scale(1.05);
+        }
+
+        .book img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .book h2 {
+            color: #333;
+            margin: 15px 0;
+        }
+
+        .book p {
+            padding: 0 20px;
+            color: #666;
+        }
+
+        .download-link {
+            display: block;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+
+        .download-link:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> Acción</h1>
+    </header>
+
+    <div class="book">
+        <h2>Libro 1: "Título del Libro"</h2>
+        <p>Descripción breve del libro.</p>
+        <img src="libro1.jpg" alt="Portada del Libro 1">
+        <a href="libros/libro1.pdf" class="download-link" download>Descargar Libro</a>
+    </div>
+
+    <div class="book">
+        <h2>titulo libro"</h2>
+        <p>breve descripcion del libro</p>
+        <img src="libro2.jpg" alt="Portada del Libro 2">
+        <a href="libros/libro2.pdf" class="download-link" download>Descargar Libro</a>
+    </div>
+
+    <div class="book">
+        <h2>Libro 3: "Título del Libro"</h2>
+        <p>Más información sobre el tercer libro.</p>
+        <img src="libro3.jpg" alt="Portada del Libro 3">
+        <a href="libros/libro3.pdf" class="download-link" download>Descargar Libro</a>
+    </div>
+
+</body>
+
+</html>

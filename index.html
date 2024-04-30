@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Librería Online</h1>
+        </div>
+    </header>
+
+<style>/* Estilos previos al cuerpo de la página */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    /* Estilos de la barra de navegación */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        overflow: hidden;
+    }
+    
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: right;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    nav ul li:first-child {
+        margin-left: 0;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: #ccc;
+    }
+    
+    /* Estilos de la barra lateral */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200px;
+        background-color: #333;
+        color: #fff;
+        padding-top: 20px;
+        z-index: 1;
+        overflow-y: auto;
+    }
+    
+    .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .sidebar li {
+        margin-bottom: 20px;
+    }
+    
+    .sidebar li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        display: block;
+        padding: 10px 0;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .sidebar li a:hover {
+        background-color: #555;
+    }
+    
+    /* Estilos para el contenido principal */
+    .main-content {
+        margin-left: 220px;
+        padding: 20px;
+    }
+    
+    /* Estilos para la sección de explicación */
+    .explanation {
+        max-width: 800px;
+        margin: 100px auto 0 auto;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    
+    .explanation h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .explanation p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    
+    /* Estilos para la sección de contacto */
+    .contact-section {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+    
+    .contact-section h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    .contact-section p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    .contact-form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .contact-form button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .contact-form button:hover {
+        background-color: #0056b3;
+    }
+    
+    /* Estilos para la sección de reseñas */
+    .reviews-section {
+        margin-top: 40px;
+    }
+    
+    .review-form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .review-form input,
+    .review-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .rating { 
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .rating input {
+        display: none;
+    }
+    
+    .rating label {
+        font-size: 30px;
+        color: #ccc;
+        cursor: pointer;
+    }
+    
+    .rating label:hover,
+    .rating label:hover ~ label,
+    .rating input:checked ~ label {
+        color: #ffcc00;
+    }
+    </style>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="crimen.html">Terror</a></li>
+            <li><a href="informaTICA.HTML">Informática</a></li>
+            <li><a href="proximamnte.html">Próximamente</a></li>
+            <li><a href="accion.html">Acción</a></li>
+            <li><a href="terror.html">Suspense</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <!-- Sección de explicación -->
+        <section class="explanation">
+            <div class="container">
+                <h2>¡Bienvenido!</h2>
+                <p>Soy Ju4n, el encargado de esta librería online. Me apasiona brindarte acceso a una amplia gama de libros para que puedas explorar y disfrutar.</p>
+                <p>¡Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarme!</p>
+            </div>
+        </section>
+
+        <!-- Sección de reseñas -->
+        <section class="reviews-section">
+            <div class="container">
+                <h2>Deja tu reseña</h2>
+                <div class="review-form">
+                    <form action="#" method="post">
+                        <input type="text" name="name" placeholder="Tu Nombre" required>
+                        <textarea name="review" rows="5" placeholder="Tu Reseña" required></textarea>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">&#9733;</label>
+                        </div>
+                        <button type="submit">Enviar Reseña</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de contacto mediante formulario de correo -->
+<section class="contact-section">
+    <div class="container">
+        <h2>Contáctame</h2>
+        <p>¿Tienes alguna pregunta o sugerencia? Envíame un correo electrónico utilizando el formulario a continuación:</p>
+        <div class="contact-form">
+            <form action="mailto:tuemail@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea name="message" rows="5" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit">Enviar Correo</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Sección de descubrir -->
+        <section class="descubrir">
+            <div class="container">
+                <h2>Descubrir más libros aquí</h2>
+                <a href="https://www.wattpad.com/user/Ju4n_01">Explorar</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Librería Online DE JU4N. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
